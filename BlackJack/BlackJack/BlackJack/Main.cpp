@@ -1,7 +1,7 @@
 #include"Dealer.h"
 #include"Deck.h"
 #include"Player.h"
-#include "Probability.h"
+#include"Probability.h"
 #include<string>
 
 //globsl constants
@@ -134,7 +134,7 @@ int main() {
 
 			//output results 
 			if(lose) {
-				cout << "\nYOU LOSE, you loser!" << endl;
+				cout << "\nHa Ha YOU LOSE, you loser!" << endl;
 			} else if(push) {
 				cout << "\nPUSH, don't push me over the edge baby!" << endl;
 			} else {
@@ -182,6 +182,7 @@ int main() {
 				if ( response == 'y' || response == 'Y' ) {
 					repeat = false;
 					deck.clear();
+					retry = true;
 				} else if ( response == 'n' || response =='N' ){
 					cout << "goodbye";
 					system ("CLS");
